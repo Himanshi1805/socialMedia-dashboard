@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* ### Primary */
+    --Lime-Green: hsl(163, 72%, 41%);
+    --Bright-Red: hsl(356, 69%, 56%);
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --insta1: #ee887e;
+    --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --YouTube: hsl(348, 97%, 39%);
+    /* #### Dark Theme */
+    --Very-DarkBlue: hsl(230, 17%, 14%);
+    --Very-Dark-Blue: hsl(232, 19%, 15%);
+    --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
+    --Desaturated-Blue: hsl(228, 34%, 66%);
+    --White: hsl(0, 0%, 100%);
+    /* #### Dark Theme toggle */
+    --Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+}
+
+body {
+    background-color: var(--Very-DarkBlue);
+    font-family: "Inter", sans-serif;
+    padding: 3rem;
+}
+
+.main-container {
+    padding: 1em;
+}
+
+#wrapper-main {
+    padding: 0.5em 0.5em;
+}
+
+.head-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: var(--Very-Dark-Blue); */
+}
+
+.titles {
+    padding-bottom: 1.5em;
+}
+
+.title-header {
+    color: var(--White);
+}
+
+.title-header-2 {
+    color: var(--White);
+    padding-bottom: 1.5em;
+}
+
+.title-para {
+    color: var(--Desaturated-Blue);
+    font-weight: 400;
+    padding-bottom: 1.5em;
+    /* border-bottom: 1px solid var(--Desaturated-Blue); */
+}
+
+#wrapper-grid {
+    padding: 0.2em;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5em;
+}
+
+.facebook-1 {
+    background-color: var(--Dark-Desaturated-Blue);
+    padding: 1em;
+    border-radius: 0.2em;
+    border-top: 4px solid var(--Facebook);
+    cursor: pointer;
+}
+
+.facebook-1:hover {
+    background-color: var(--Dark-Desaturated-Blue);
+}
+
+.twitter-1 {
+    background-color: var(--Dark-Desaturated-Blue);
+    padding: 1em;
+    border-radius: 0.2em;
+    border-top: 4px solid var(--Twitter);
+    cursor: pointer;
+}
+
+.instagram-1 {
+    background-color: var(--Dark-Desaturated-Blue);
+    padding: 1em;
+    border-radius: 0.2em;
+    border-top: 4px solid var(--insta1);
+    cursor: pointer;
+}
+
+.youtube-1 {
+    background-color: var(--Dark-Desaturated-Blue);
+    padding: 1em;
+    border-radius: 0.2em;
+    border-top: 4px solid var(--YouTube);
+    cursor: pointer;
+}
+
+.logo-icon {
+    /* text-align: center;
+    color: var(--Desaturated-Blue); */
+    text-align: center;
+    color: var(--Desaturated-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spacer {
+    margin-right: 8px;
+}
+
+.numbers {
+    color: var(--White);
+    text-align: center;
+    padding-top: 0.5em;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.followers {
+    text-transform: uppercase;
+    color: var(--Desaturated-Blue);
+    letter-spacing: 0.35rem;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.views-green {
+    color: var(--Lime-Green);
+    text-align: center;
+}
+
+.views-red {
+    color: var(--Bright-Red);
+    text-align: center;
+}
+
+.overview-container {
+    margin: 2em 0;
+}
+
+.overview-cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5em;
+}
+
+.likesection {
+    background-color: var(--Dark-Desaturated-Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-views {
+    padding: 1em 1.2em 1em 1.4em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--Desaturated-Blue);
+    font-weight: bold;
+}
+
+.numzz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1em 1.2em 1em 1.4em;
+}
+
+.numbs {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--White);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* //RESONSIVE NESS */
+
+@media screen and (max-width:550px) {
+    body {
+        padding: 0;
+    }
+    #wrapper-grid {
+        grid-template-columns: 1fr;
+    }
+    .overview-cards {
+        grid-template-columns: 1fr;
+    }
+    .head-details {
+        display: flex;
+        flex-direction: column;
+        /* background-color: var(--Very-Dark-Blue); */
+    }
+    .wrapper-color-switch {
+        /* display: flex;
+        text-align: center;
+        justify-content: space-between;
+        padding-bottom: 1.5em; */
+        padding-bottom: 1.5em;
+        margin-left: 9em;
+    }
+    .title-para {
+        color: var(--Desaturated-Blue);
+        font-weight: 400;
+        padding-bottom: 1.5em;
+        border-bottom: 1px solid var(--Desaturated-Blue);
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .overview-cards {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+}
+
+
+/* /LIGTH mode colors class */
+
+.light-mode {
+    --Very-DarkBlue: hsl(0, 0%, 100%);
+    --Very-Dark-Blue: hsl(225, 100%, 98%);
+    --Dark-Desaturated-Blue: hsl(227, 47%, 96%);
+    --Desaturated-Blue: hsl(228, 12%, 44%);
+    --White: hsl(230, 17%, 14%);
+}
+
+
+/* container that holds the switch */
+
+.wrapper-color-switch {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    justify-content: flex-end;
+}
+
+.color-switch {
+    width: 4em;
+    height: 2em;
+    border-radius: 10em;
+    background: #3dc2a2;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+/* circle toggle that animates backward and forward */
+
+.color-switch-toggle {
+    width: 1.6em;
+    height: 1.6em;
+    background: var(--Very-Dark-Blue);
+    position: absolute;
+    border-radius: 10em;
+    top: 0.2em;
+    left: 0.2em;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.color-switch::before {
+    content: "Dark Mode On";
+    position: absolute;
+    display: inline-block;
+    width: 12em;
+    left: -8em;
+    top: 0.4em;
+    font-weight: bold;
+    color: var(--Desaturated-Blue);
+}
+
+
+/* animate circle toggle if switch is on */
+
+#input-color-switch:checked~label .color-switch-toggle {
+    transform: translatex(2em);
+}
+
+
+/* change text of before if switch is on */
+
+
+/* #input-color-switch:checked~.color-switch::before {
+    content: "Light Mode On";
+} */
+
+
+/* //hide input */
+
+#input-color-switch {
+    display: none;
+}
+
+
+/*
+.color-behind {
+    background-color: var(--Very-Dark-Blue);
+    width: 99vw;
+    height: 38vh;
+    position: absolute;
+    margin: 0.2em;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: -1;
+} */
